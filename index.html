@@ -1,0 +1,159 @@
+﻿<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>learning Bootstrap</title>
+        <link rel="stylesheet" href="./include/bootstrap.css">
+        <link rel="stylesheet" href="./include/studentpanelnav.css">
+        <link rel="stylesheet" href="./include/studentformstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script>
+          function myFunction() {
+          document.getElementById("myDropmenu").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+          if (!event.target.matches('menubtn')) {
+            var droplist = document.getElementsByclassName("dropdown-list");
+            var i;
+            for (i = 0; i < droplist.length; i++) {
+              var openDroplist = droplist[i];
+              if (openDroplist.classList.contains('show')) {
+                openDroplist.classList.remove('show');
+              }
+            }
+          }
+    }
+    function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0px";
+      }
+
+       function changeBodyColor() {
+         if(document.body.style.backgroundColor == "black") {
+          document.body.style.backgroundColor = "#F4F4F4";
+         }
+         else {
+          document.body.style.backgroundColor = "black";
+         }
+       }
+      </script>
+
+      <style>
+        .widthth{
+          background: #F4F4F4;
+        }
+      </style>
+
+    </head>
+    <body class="widthth">
+      <div class="container-fluid">
+        <img id="bgimg1" src="./images/Vector 2.png" alt="">
+        <img id="bgimg2" src="./images/Vector 3.png" alt="">
+        <img id="bgimg3" src="./images/Cone-White-Glossy.png" alt="">
+        <img id="bgimg4" src="./images/Cone-White-Glossy (1).png" alt="">
+          <div class="row">
+            <div class="col-2">
+                <!-- For Mobile -->
+            <div class="row">
+                <!--Sidepanel button-->
+                <button class="openbtn mt-5 pt-0 pb-0" onclick="openNav()">☰</button>
+                <!--Sidepanel-->
+                <div id="mySidepanel" class="sidepanel">
+                  <div class="nav1">
+                  <a href="#">
+                  <img id="logos" src="./images/dash.svg" /> Dashboard
+                      </a>
+                      
+                      <a href="result.html">
+                      <img id="logos" src="./images/result.svg" /> Results
+                      </a>
+                      </div>
+                      <div class="navbuttons">
+                        <button id="navbottombtn">
+                          <img  src="./images/Vector (1).png" /> About Us
+                        </button>
+                                
+                                <button id="navbottombtn">
+                                <img  src="./images/Vector (2).png" /> Join Us
+                                </button>
+                      </div>
+                      <!--sidepanel close button-->
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                      <img id="closbtn" src="./images/Arrow3.png" />
+                      <img id="clsbtn" src="./images/Arrow1.png" />
+                      </a>
+                </div>
+                <!--For laptop and tabs-->
+                <!--Sidebar-->
+              <div class="sidebar pt-5">
+                  <div class="nav1">
+                  <a href="#">
+                  <img id="logos" src="./images/dash.svg" /> Dashboard
+                        </a>
+                        
+                        <a href="result.html">
+                        <img id="logos" src="./images/result.svg" /> Results
+                        </a>
+                        </div>
+                        <div class="navbuttons">
+                          <button id="navbottombtn">
+                            <img  src="./images/Vector (1).png" /> About Us
+                          </button>
+                                  
+                                  <button id="navbottombtn">
+                                  <img  src="./images/Vector (2).png" /> Join Us
+                                  </button>
+                        </div>
+                      </div>
+            </div>
+          </div>
+          <div class="col-10 pl-lg-5 pl-3">
+              <div class="row">
+            <div id="subheading1" class="col-6 pl-lg-3 pl-0 pt-3" align="left">
+                <div id="heading">
+                  Muhammad Hamza
+                </div>
+        </div>
+        <div class="col-lg-2 col-5 pt-4 mt-4" align="right">
+            <span class="switch">
+                <input type="checkbox" checked id="switch" onclick="changeBodyColor()" /><label class="m-0" for="switch"></label>
+                </span>
+        </div>
+        <div class="col-lg-1 col-2 pt-4" align="right">
+            <img class="icon mt-3" src="./images/equilizer.svg" alt="">
+        </div>
+        <div class="col-lg-1 col-2 pt-4 pr-0" align="right">
+            <img class="icon mt-3" src="./images/bell.svg" alt="">
+        </div>
+        <div class="col-lg-2 col-3 pt-md-3 pt-4" align="right">
+            <div class="dropmenu">
+                <button onclick="myFunction()" class="menubtn rounded-circle">
+                <img id="img2" class="img-fluid rounded-circle p-0" src="./images/photo1.jpeg" />
+                </button>
+                <div id="myDropmenu" class="dropdown-list">
+                  <a><img id="img2" class="img-fluid rounded-circle" src="./images/photo1.jpeg" /> <br></br>Profile</a>
+                  <a>Logout</a>
+                </div>
+              </div>
+        </div>
+        </div>
+            <!--Heading shown on mobile and tab-->
+        <div id="subheading2" class="row">
+            <div class="col" align="left">
+              <div id="heading">
+                Muhammad Hamza
+              </div>
+            </div>
+          </div>
+
+              </div>
+          </div>
+              </div>
+    </body>
+</html>
