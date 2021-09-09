@@ -233,3 +233,14 @@ color: #4E60F6;
 }
 
 }
+@media screen and (max-width: 600px) {
+	.rect2{
+  width: 100px;
+  height: 54px;
+}
+
+.rect3{
+  width: 80px;
+  height: 54px;
+}
+}
