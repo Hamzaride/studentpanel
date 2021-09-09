@@ -235,12 +235,23 @@ color: #4E60F6;
 }
 @media screen and (max-width: 600px) {
 	.rect2{
-  width: 100px;
-  height: 54px;
+  width: 90px;
+  height: 84px;
 }
 
 .rect3{
   width: 80px;
-  height: 54px;
+  height: 84px;
+}
+	#savebtn{
+  width: 100px;
+  height: 60px;
+  font-size: 25.2338px;
+}
+
+#cancelbtn{
+  width: 100px;
+  height: 60px;
+  font-size: 25.2338px;
 }
 }
