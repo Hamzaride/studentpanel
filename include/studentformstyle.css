@@ -233,7 +233,7 @@ color: #4E60F6;
 }
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 	.rect2{
   width: 80px;
   height: 90px;
