@@ -153,6 +153,7 @@
     height:15px;
 }
     .bottomrect2{
-    margin-top:200px;
+    position:absolute;
+        top:50px;
 }
 }
