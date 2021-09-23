@@ -127,3 +127,26 @@ color: #4E60F6;
     }
 }
 
+@media screen and (max-width: 400px) {
+    #savebtn{
+  width: 100px;
+  height: 50px;
+  font-size: 28.2338px;
+}
+
+#cancelbtn{
+  width: 100px;
+  height: 50px;
+  font-size: 28.2338px;
+}
+    .rect2{
+  width: 100px;
+  height: 84px;
+}
+
+.rect3{
+  width: 108px;
+  height: 84px;
+}
+}
+
