@@ -75,3 +75,19 @@
         display: block;
     }
 }
+@media screen and (max-width: 400px) {
+    #imgstyle1{
+    height: 242px;
+}
+#imgstyle2{
+    width: 119px;
+    height: 119px;
+}
+    #textstyle1{
+    font-size: 22px;
+}
+
+#textstyle2{
+    font-size: 18px;
+}
+}
