@@ -1,0 +1,464 @@
+#heading{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    padding-top: 30px;
+    color: #3C4BCE;
+}
+
+#subheading2{
+    display: none;
+}
+
+
+#calendar-month-year{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+}
+
+.today {
+    background: #4E60F6;
+    border-radius: 12px;
+    color: #FFFFFF;
+}
+
+#calendar-dates{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ABABAB;
+}
+
+#calendar-dates th{
+    width: 41px;
+    height: 80px;
+    color: #4E60F6;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#calendar-dates td{
+    width: 10px;
+    height: 31px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.rectstyle51{
+    width: 100%;
+    
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.2);
+    border-radius: 27px;
+}
+
+.rectstyle55{
+    width: 100%;
+    height: 239px;
+    background: linear-gradient(180deg, #5163FE 0.01%, #9584FF 111.09%);
+    mix-blend-mode: normal;
+    box-shadow: 7px 17px 17px rgba(0, 0, 0, 0.2);
+    border-radius: 27px;
+}
+
+.rectstyle56{
+    width: 100%;
+    height: 239px;
+    background: linear-gradient(119.18deg, rgba(255, 255, 255, 0.17) -5.46%, rgba(255, 255, 255, 0.51) 110.68%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 17px 17px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(19px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 27px;
+}
+
+.textstyle1{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31px;
+    color: #3C4BCE;
+}
+
+#setposition2{
+    position: absolute;
+    top:10px;
+    font-size: 10px;
+}
+
+#textstyle2{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #000000;
+}
+
+#textstyle3{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    color: #000000;
+}
+
+#textstyle6{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #4E60F6;
+}
+
+#textstyle7{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.textstyle8{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.textstyle9{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+#textstyle10{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+#textstyle11{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 61px;
+    color: #FFFFFF;
+}
+
+#textstyle12{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #4E60F6;
+}
+
+#textstyle13{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #000000;
+}
+
+#setposition3{
+    position: absolute;
+    top:20px;
+    font-size: 16px;
+}
+
+#setfonts{
+    font-weight: bold;
+    font-size: 38px;
+    color: #4E60F6;
+}
+
+#tablestyle td{
+    width: 170px;
+    height: 50px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #000000;
+    text-align: center;
+}
+
+#tablestyle .textstyle4{
+    color: #4E60F6;
+    text-align: left;
+}
+
+#tablestyle .textstyle5{
+    color: #4E60F6;
+}
+
+.rectstyle52{
+    width: 100%;
+    height: 426px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.2);
+    border-radius: 27px;
+}
+
+.rectstyle53{
+    width: 100%;
+    height: 426px;
+    background: linear-gradient(180deg, #5163FE 0.01%, #9584FF 111.09%);
+    mix-blend-mode: normal;
+    box-shadow: 7px 17px 17px rgba(0, 0, 0, 0.2);
+    border-radius: 27px;
+}
+
+.rectstyle54{
+    width: 100%;
+    height: 350px;
+}
+
+.scrollset{
+    overflow-y: auto;
+    margin-right: 10px;
+}
+
+.scrollset::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollset::-webkit-scrollbar-track {
+    box-shadow:none; 
+}
+
+.scrollset::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
+    border-radius: 3.5px;
+}
+
+@media screen and (max-width: 1300px) {
+    #calendar-dates th{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #calendar-dates td{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    #textstyle10{
+        font-size: 15px;
+    }
+
+    #textstyle11{
+        font-size: 51px;
+    }
+
+    #calendar-dates th{
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    #calendar-dates td{
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+}
+
+@media screen and (max-width: 1050px) { 
+    #calendar-dates th{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #calendar-dates td{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) { 
+    #textstyle10{
+        font-size: 12px;
+    }
+
+    #textstyle11{
+        font-size: 41px;
+    }
+
+    #textstyle13{
+        font-size: 10px;
+    }
+
+    .rectstyle55{
+        height: 200px;
+    }
+
+    .rectstyle56{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #subheading1{
+        display: none;
+    }
+
+    #subheading2{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    #calendar-dates th{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #calendar-dates td{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #textstyle2{
+        font-size: 30px;
+    }
+
+    #textstyle3{
+        font-size: 15px;
+    }
+
+    #tablestyle td{
+        font-size: 15px;
+    }
+
+    #setfonts{
+        font-size: 30px;
+    }
+
+    #textstyle12{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+#calendar-dates th{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    #calendar-dates td{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #tablestyle td{
+        font-size: 12px;
+    }
+
+    #textstyle2{
+        font-size: 25px;
+    }
+
+    #setfonts{
+        font-size: 25px;
+    }
+
+    #textstyle3{
+        font-size: 12px;
+    }
+
+    #setposition2{
+    top:7px;
+    }
+
+    .rectstyle56{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+#calendar-dates th{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    #calendar-dates td{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #calendar-dates th{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #calendar-dates td{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .textstyle1{
+        font-size: 25px;
+    }
+
+    #textstyle2{
+        font-size: 20px;
+    }
+
+    #setfonts{
+        font-size: 20px;
+    }
+
+    #tablestyle td{
+        font-size: 10px;
+    }
+
+    #setposition2{
+    top:4px;
+    font-size: 8px;
+}
+.rectstyle52{
+    height: 100%;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+    #calendar-dates th{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #calendar-dates td{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

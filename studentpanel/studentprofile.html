@@ -1,0 +1,287 @@
+﻿<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>learning Bootstrap</title>
+        <link rel="stylesheet" href="./include/bootstrap.css">
+        <link rel="stylesheet" href="./include/studentpanelnav.css">
+        <link rel="stylesheet" href="./include/studentprofilestyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script>
+          function myFunction() {
+          document.getElementById("myDropmenu").classList.toggle("show");
+        }
+        function myFunction1() {
+          document.getElementById("myDropmenu1").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+          if (!event.target.matches('.menubtn')) {
+            var droplist = document.getElementsByclassName("dropdown-list");
+            var i;
+            for (i = 0; i < droplist.length; i++) {
+              var openDroplist = droplist[i];
+              if (openDroplist.classList.contains('show')) {
+                openDroplist.classList.remove('show');
+              }
+            }
+          }
+    }
+    function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0px";
+      }
+
+       function changeBodyColor() {
+         if(document.body.style.backgroundColor == "black") {
+          document.body.style.backgroundColor = "#F4F4F4";
+          document.getElementById("changmode1").style.backgroundColor="#FFFFFF";
+          document.getElementById("changmode2").style.backgroundColor="#FFFFFF";
+         }
+         else {
+          document.body.style.backgroundColor = "black";
+          document.getElementById("changmode1").style.backgroundColor="#454545";
+          document.getElementById("changmode2").style.backgroundColor="#454545";
+         }
+       }
+
+       function importimg() {
+            let input = document.createElement('input');
+            input.type = 'file';
+            input.click();
+            }
+      </script>
+
+      <style>
+          .widthth{
+          background: #F4F4F4;
+        }
+    </style>
+
+    </head>
+    <body class="widthth">
+      <img id="bgimg1" src="./images/Vector 2.png" alt="">
+        <img id="bgimg2" src="./images/Vector 3.png" alt="">
+        <img id="bgimg3" src="./images/Cone-White-Glossy.png" alt="">
+        <img id="bgimg4" src="./images/Cone-White-Glossy (1).png" alt="">
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-2">
+                <!-- For Mobile -->
+            <div class="row">
+                <!--Sidepanel button-->
+                <button class="openbtn mt-5 pt-0 pb-0" onclick="openNav()">☰</button>
+                <!--Sidepanel-->
+                <div id="mySidepanel" class="sidepanel">
+                  <div class="nav1">
+                    <a href="index.html">
+                        <img id="logos" src="./images/dash.svg" /> Dashboard
+                            </a>
+                            
+                            <a href="resultstudentpanel.html">
+                            <img id="logos" src="./images/result.svg" /> Results
+                            </a>
+                        </div>
+                        <div class="navbuttons">
+                          <a id="navbottombtn" href="aboutus.html">
+                            <img  src="./images/Vector (1).png" /> About Us
+                          </a>
+                                  
+                                  <a id="navbottombtn" href="jionuspage.html">
+                                  <img  src="./images/Vector (2).png" /> Join Us
+                                  </a>
+                      </div>
+                      <!--sidepanel close button-->
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                      <img id="closbtn" src="./images/Arrow3.png" />
+                      <img id="clsbtn" src="./images/Arrow1.png" />
+                      </a>
+                </div>
+                <!--For laptop and tabs-->
+                <!--Sidebar-->
+              <div class="sidebar pt-5">
+                  <div class="nav1">
+                    <a href="index.html">
+                        <img id="logos" src="./images/dash.svg" /> Dashboard
+                            </a>
+                            
+                            <a href="resultstudentpanel.html">
+                            <img id="logos" src="./images/result.svg" /> Results
+                            </a>
+                        </div>
+                        <div class="navbuttons">
+                          <a id="navbottombtn" href="aboutus.html">
+                            <img  src="./images/Vector (1).png" /> About Us
+                          </a>
+                                  
+                                  <a id="navbottombtn" href="jionuspage.html">
+                                  <img  src="./images/Vector (2).png" /> Join Us
+                                  </a>
+                        </div>
+                      </div>
+            </div>
+          </div>
+          <div class="col-10 pl-3">
+              <div class="row">
+            <div id="subheading1" class="col-6 pl-lg-3 pl-0 pt-3" align="left">
+                <div id="heading">
+                  Muhammad Hamza
+                </div>
+        </div>
+        <div class="col-lg-2 col-5 pt-4 mt-4" align="right">
+            <span class="switch">
+                <input type="checkbox" checked id="switch" onclick="changeBodyColor()" /><label class="m-0" for="switch"></label>
+                </span>
+        </div>
+        <div class="col-lg-1 col-2 pt-4" align="right">
+            <div class="dropmenu1">
+                <button onclick="myFunction1()" class="menubtn">
+                    <img class="icon mt-3" src="./images/equilizer.svg" alt="">
+                </button>
+                <div id="myDropmenu1" class="dropdown1-list">
+                  <a>Help</a>
+                  <a>Customer Service</a>
+                  <a>Contact Us</a>
+                  <a>Become a Patreon</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-1 col-2 pt-4 pr-0" align="right">
+            <img class="icon mt-3" src="./images/bell.svg" alt="">
+        </div>
+        <div class="col-lg-2 col-3 pt-md-3 pt-4" align="right">
+            <div class="dropmenu">
+                <button onclick="myFunction()" class="menubtn rounded-circle">
+                <img id="img2" class="img-fluid rounded-circle p-0" src="./images/photo1.jpeg" />
+                </button>
+                <div id="myDropmenu" class="dropdown-list">
+                  <a href="studentprofile.html"><img id="img2" class="img-fluid rounded-circle" src="./images/photo1.jpeg" /> <br></br>Profile</a>
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+        </div>
+        </div>
+              </div>
+              <div class="col-xl-2 d-xl-block d-none"></div>
+              <div class="col-xl-10 ml-xl-5 pl-xl-5 pl-0 pr-0">
+                            <!--Heading shown on mobile and tab-->
+        <div id="subheading2" class="row">
+          <div class="col" align="left">
+            <div id="heading">
+              Muhammad Hamza
+            </div>
+          </div>
+        </div>
+        <!--Form-->
+        <div class="row ml-xl-5 pl-xl-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8 col-12 pt-5">
+                        <div id="changmode1" class="yourprofilerect">
+                            <div class="row">
+                                <div class="col-lg-4 col-6 m-auto toprect2"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-6 m-auto textstyle1 pt-2">
+                                    Your Profile
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 m-auto textstyle2 pt-2">
+                                    Profile Pic
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 m-auto imgstyle1 pt-2 rounded-circle" align="center">
+                                    <img class="img-fluid rounded-circle imgsize" src="./images/photo1.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col textstyle3 pl-5">First Name</div>
+                                <div class="col textstyle4 pr-5">First Name</div>
+                            </div>
+                            <div class="row">
+                                <div class="col textstyle3 pl-5">Date Of Birth</div>
+                                <div class="col textstyle4 pr-5">Date Of Birth</div>
+                            </div>
+                            <div class="row">
+                                <div class="col textstyle3 pl-5">Last Name</div>
+                                <div class="col textstyle4 pr-5">Last Name</div>
+                            </div>
+                            <div class="row">
+                                <div class="col textstyle3 pl-5">Email Address</div>
+                                <div class="col textstyle4 pr-5">Email Address</div>
+                            </div>
+                            <div class="row">
+                                <div class="col textstyle3 pl-5">University Name</div>
+                                <div class="col textstyle4 pr-5">University Name</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-5 col-lg-6 col-8 m-auto pt-2">
+                                    <a href="studentform.html">
+                                        <button class="btnrect">
+                                            Edit
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row pt-5 mt-4">
+                                <div class="col-lg-4 col-6 m-auto bottomrect2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 pt-5">
+                        <div id="changmode2" class="studentIdrect">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-7 col-6 m-auto toprect2"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-8 col-md-9 col-7 m-auto textstyle1 pt-2">
+                                    Student Id
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-8 m-auto textstyle2 pt-2">
+                                    Front Side
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-10 m-auto" align="center">
+                                    <img class="imgstyle2" src="./images/Group 130.png" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-8 m-auto textstyle2 pt-2">
+                                    Back Side
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-10 m-auto" align="center">
+                                    <img class="imgstyle2" src="./images/Group 129.png" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-8 col-md-9 col-5 m-auto pt-2">
+                                    <button class="btnuploadcard">
+                                       <img id="imgstyle3" src="./images/Vector (3).png" alt=""> Upload Image
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row pt-4 mt-0">
+                                <div class="col-lg-6 col-md-7 col-6 m-auto bottomrect2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+              </div>
+          </div>
+              </div>
+    </body>
+</html>
