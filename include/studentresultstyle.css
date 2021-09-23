@@ -313,7 +313,7 @@
 }
 @media screen and (max-width: 400px){
     #textstyle1{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .textstyle2{
@@ -329,9 +329,9 @@
     }
     .semesterrect{
     height: 56px;
-    font-size: 20.4752px;
+    font-size: 15.4752px;
 }
     setfontsize{
-    font-size: 6px;
+    font-size: 4px;
 }
 }
