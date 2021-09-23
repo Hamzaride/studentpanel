@@ -311,3 +311,27 @@
     height: 100%;
 }
 }
+@media screen and (max-width: 400px){
+    #textstyle1{
+        font-size: 12px;
+    }
+
+    .textstyle2{
+        font-size: 15px;
+    }
+
+    #setfonts{
+        font-size: 15px;
+    }
+
+    #tablestyle td{
+        font-size: 8px;
+    }
+    .semesterrect{
+    height: 56px;
+    font-size: 20.4752px;
+}
+    setfontsize{
+    font-size: 6px;
+}
+}
