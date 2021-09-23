@@ -328,10 +328,10 @@
         font-size: 8px;
     }
     .semesterrect{
-    height: 56px;
-    font-size: 15.4752px;
+    height: 50px;
+    font-size: 13.4752px;
 }
     setfontsize{
-    font-size: 4px;
+    font-size: 2px;
 }
 }
