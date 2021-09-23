@@ -145,8 +145,16 @@ color: #4E60F6;
 }
 
 .rect3{
+    margin-left:-20px;
   width: 108px;
   height: 84px;
+}
+    #uploadimg{
+  font-size: 12.2338px;
+}
+
+#removeimg{
+  font-size: 12.2338px;
 }
 }
 
