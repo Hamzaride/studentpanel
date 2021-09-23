@@ -1,0 +1,365 @@
+.sidebar {
+    position: fixed;
+    width: 180px;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(60, 76, 208, 0.31) 0%, rgba(50, 64, 185, 0.48) 100%);
+    backdrop-filter: blur(20px);
+    text-align: left;
+    z-index: 3;
+  }
+  
+  #logos{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  
+  
+   .nav1{
+     padding-top: 50px;
+     padding-left: 20px;
+   }
+  
+  .sidebar a {
+    display: block;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #A1AAF2;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .sidebar a:hover {
+    background: rgba(255, 255, 255, 0.19);
+    border-right: 6px solid  #0023BF;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: rgb(27, 68, 204);
+  }
+  
+  .openbtn {
+    display:none;
+  }
+  .sidepanel  {
+    display:none;
+  }
+  
+  .menubtn {
+    background: rgb(243, 240, 240, 0);
+    border:none;
+  }
+
+  .menubtn:focus{
+    box-shadow: none;
+    outline: none;
+  }
+  
+  #img2{
+    width: 70.12px;
+    height: 70.12px;
+  }
+  
+  
+  .dropmenu {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+  }
+  
+  .dropdown-list {
+    display: none;
+    position: absolute;
+    right:5px;
+    background-color:white;
+    width: 260px;
+    border-radius: 20px;
+    border-style: solid;
+    overflow: auto;
+    text-align: center;
+    
+    
+  }
+  
+  .dropdown-list a {
+    padding: 12px 16px;
+    border-style: solid;
+    border-color:white;
+    color:black;
+    border-radius: 20px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropmenu a:hover {
+    background-color:rgb(210, 210, 235);
+  }
+
+  .dropmenu1 {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+  }
+  
+  .dropdown1-list {
+    display: none;
+    position: absolute;
+    right:5px;
+    width: 150px;
+    height: 157px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+    text-align: left;
+  }
+  
+  .dropdown1-list a {
+    padding: 12px 16px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    color: #4E60F6;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropmenu1 a:hover {
+    background-color:rgb(210, 210, 235);
+  }
+  
+  .show {
+    display: block;
+  }
+
+  #navbottombtn{
+    width: 170px;
+    height: 53px;
+    background: rgb(243, 240, 240, 0);
+    border: none;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    color: #FFFFFF;
+  }
+
+  #navbottombtn:hover{
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 7px;
+  }
+
+  .navbuttons{
+    position: absolute;
+    bottom: 10%;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .sidebar {
+      display:none;
+    }
+    .sidepanel  {
+      display:block;
+      width: 0px;
+      position: fixed;
+      z-index: 2;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(50, 64, 185);
+      overflow: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      text-align: left;
+    }
+    .col2{
+      background: white;
+      width: 200px;
+    }
+    
+    .sidepanel a {
+      padding: 16px;
+      text-decoration: none;
+      color: #A1AAF2;
+      opacity: 0.7;
+      font-family: Raleway;
+      font-style: normal;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidepanel a:hover {
+      color: #1d2f94;
+      border-right: solid rgb(27, 68, 204);
+    }
+    
+    .sidepanel .closebtn {
+      position: relative;
+      text-align: right;
+    }
+  
+    #closbtn{
+      position: absolute;
+      left:215px;
+    }
+  
+    #clsbtn{
+      position: absolute;
+      left:230px;
+      top: 83px;
+    }
+  
+    .openbtn {
+      display: block;
+      font-size: 20px;
+      cursor: pointer;
+      background: rgb(243, 240, 240, 0);
+      color: blue;
+      padding: 10px 15px;
+      border: none;
+    }
+    
+    .openbtn:hover {
+      background-color:rgb(230, 224, 224);
+    }
+     .dropdown-list {
+      display: none;
+      position: absolute;
+      right:50px;
+      background-color: #665f5f;
+      width: 160px;
+      border-radius: 20px;
+      overflow: auto;
+      text-align: center;
+    }
+    .show {
+      display: block;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    #img2{
+      width: 50.12px;
+      height: 50.12px;
+    }
+
+    .icon{
+      width: 30.12px;
+      height: 30.12px;
+    }
+  }
+
+  /*Custom checkbox here*/
+
+ .switch input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.switch label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 60px;
+	height: 25px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+.switch label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 5px;
+	width: 18px;
+	height: 18px;
+  background: url(../images/Vector\ \(5\).png) black;
+    background-size: 12px;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+.switch input:checked + label {
+	background: var(--purple);
+}
+
+.switch input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+  background: url(../images/sun.svg) white;
+  background-size: 12px;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+}
+
+.switch label:active:after {
+	width: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .switch label {
+    width: 33px;
+    height: 15px;
+    border-radius: 80px;
+  }
+  
+  .switch label:after {
+    top: 2px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    background: url(../images/Vector\ \(5\).png) black;
+      background-size: 8px;
+  }
+  
+  .switch input:checked + label:after {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+    background: url(../images/sun.svg) white;
+    background-size: 8px;
+  }
+  
+  .switch label:active:after {
+    width: 15px;
+  }
+  
+  }
+
+  #bgimg1{
+    position: fixed;
+    bottom: 0px; 
+    right: 0px; 
+    width: 700px;
+    height: 500px;
+  }
+  
+  #bgimg2{
+    position: fixed;
+    bottom: 0px; 
+    right: 0px; 
+    width: 500px;
+    height: 400px;
+  }
+  
+  #bgimg3{
+    position: fixed;
+    width: 400px;
+    height: 450px;
+    bottom: 10%; 
+    left: 0px; 
+  }
+  
+  #bgimg4{
+    position: fixed;
+    width: 200px;
+    height: 300px;
+    top: 10%; 
+    right: 0px; 
+  }

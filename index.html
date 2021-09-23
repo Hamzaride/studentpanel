@@ -1,0 +1,481 @@
+﻿<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>learning Bootstrap</title>
+        <link rel="stylesheet" href="./include/bootstrap.css">
+        <link rel="stylesheet" href="./include/studentpanelnav.css">
+        <link rel="stylesheet" href="./include/studentdashboardstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script>
+          function myFunction() {
+          document.getElementById("myDropmenu").classList.toggle("show");
+        }
+        function myFunction1() {
+          document.getElementById("myDropmenu1").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+          if (!event.target.matches('.menubtn')) {
+            var droplist = document.getElementsByclassName("dropdown-list");
+            var i;
+            for (i = 0; i < droplist.length; i++) {
+              var openDroplist = droplist[i];
+              if (openDroplist.classList.contains('show')) {
+                openDroplist.classList.remove('show');
+              }
+            }
+          }
+    }
+    function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0px";
+      }
+
+       function changeBodyColor() {
+         if(document.body.style.backgroundColor == "black") {
+          document.body.style.backgroundColor = "#F4F4F4";
+          var elements = document. getElementsByClassName('changmode');
+            for(var i = 0; i < elements. length; i++){
+            elements[i]. style. backgroundColor = "#FFFFFF";
+            }
+
+            var tds = document.getElementsByTagName("td");
+
+              for(var i = 0, j = tds.length; i < j; ++i)
+                tds[i].style.color = "#000000";
+
+                var tds = document.getElementsByTagName("th");
+
+              for(var i = 0, j = tds.length; i < j; ++i)
+                tds[i].style.color = "#4E60F6";
+
+                var text1 = document.getElementsByClassName('textstyle4');
+            for(var i = 0; i < text1. length; i++){
+              text1[i]. style. color = "#4E60F6";
+            }
+            var text2 = document.getElementsByClassName('textstyle5');
+            for(var i = 0; i < text2. length; i++){
+              text2[i]. style. color = "#4E60F6";
+            }
+
+            var text3 = document.getElementsByClassName('textstyle1');
+            for(var i = 0; i < text3. length; i++){
+              text3[i]. style. color = "#3C4BCE";
+            }
+
+            document.getElementById("textstyle2").style.color="#000000";
+
+            document.getElementById("textstyle6").style.color="#4E60F6";
+
+
+            var text5 = document.getElementsByClassName('textstyle7');
+            for(var i = 0; i < text5. length; i++){
+              text5[i]. style. color = "#4E60F6";
+            }
+
+            var text6 = document.getElementsByClassName('today');
+            for(var i = 0; i < text6. length; i++){
+                text6[i]. style. color = "#FFFFFF";
+                text6[i]. style.backgroundColor = "#4E60F6";
+            }
+
+            var btnimg = document.getElementsByClassName('iconimg');
+            for(var i = 0; i < btnimg. length; i++){
+              btnimg[i]. style.fill = "#4E60F6";
+            }
+            
+            document.getElementById("textstyle12").style.color="#4E60F6";
+            document.getElementById("textstyle13").style.color="#000000";
+            document.getElementById("calendar-month-year").style.color="#000000";
+            document.getElementById("textstyle3").style.color="#000000";
+            document.getElementById("setfonts").style.color="#4E60F6";
+            document.getElementById("semesterselectionbox").style.backgroundColor="#FFFFFF";
+         }
+         else {
+          document.body.style.backgroundColor = "black";
+          var elements = document. getElementsByClassName('changmode');
+            for(var i = 0; i < elements. length; i++){
+            elements[i]. style. backgroundColor = "#454545";
+            }
+            
+            var tds = document.getElementsByTagName("td");
+
+              for(var i = 0, j = tds.length; i < j; ++i)
+                tds[i].style.color = "#FFFFFF";
+
+                var tds = document.getElementsByTagName("th");
+
+              for(var i = 0, j = tds.length; i < j; ++i)
+                tds[i].style.color = "#B5A9FF";
+
+                var text1 = document.getElementsByClassName('textstyle4');
+            for(var i = 0; i < text1. length; i++){
+              text1[i]. style. color = "#B5A9FF";
+            }
+            var text2 = document.getElementsByClassName('textstyle5');
+            for(var i = 0; i < text2. length; i++){
+              text2[i]. style. color = "#B5A9FF";
+            }
+
+            var text3 = document.getElementsByClassName('textstyle1');
+            for(var i = 0; i < text3. length; i++){
+              text3[i]. style. color = "#B5A9FF";
+            }
+
+            document.getElementById("textstyle2").style.color="#FFFFFF";
+
+            document.getElementById("textstyle6").style.color="#FFFFFF";
+
+            var text5 = document.getElementsByClassName('textstyle7');
+            for(var i = 0; i < text5. length; i++){
+              text5[i]. style. color = "#FFFFFF";
+            }
+
+            var text6 = document.getElementsByClassName('today');
+            for(var i = 0; i < text6. length; i++){
+                text6[i]. style. color = "#000000";
+                text6[i]. style.backgroundColor = "#FFFFFF";
+            }
+
+            var btnimg = document.getElementsByClassName('iconimg');
+            for(var i = 0; i < btnimg. length; i++){
+              btnimg[i]. style.fill = "#FFFFFF";
+            }
+            
+            document.getElementById("textstyle12").style.color="#FFFFFF";
+            document.getElementById("textstyle13").style.color="#FFFFFF";
+            document.getElementById("calendar-month-year").style.color="#FFFFFF";
+            document.getElementById("textstyle3").style.color="#B5A9FF";
+            document.getElementById("setfonts").style.color="#FFFFFF";
+            document.getElementById("semesterselectionbox").style.backgroundColor="#454545";
+            
+       }
+      }
+
+       function importimg() {
+            let input = document.createElement('input');
+            input.type = 'file';
+            input.click();
+            }
+
+            window.onload = function(){
+              var d = new Date();
+              var month_name = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+              var month = d.getMonth();   //0-11
+              var year = d.getFullYear(); //2014
+              var first_date = month_name[month] + " " + 1 + " " + year;
+              //September 1 2014
+              var tmp = new Date(first_date).toDateString();
+              //Mon Sep 01 2014 ...
+              var first_day = tmp.substring(0, 3);    //Mon
+              var day_name = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+              var day_no = day_name.indexOf(first_day);   //1
+              var days = new Date(year, month+1, 0).getDate();    //30
+              //Tue Sep 30 2014 ...
+              var calendar = get_calendar(day_no, days);
+              document.getElementById("calendar-month-year").innerHTML = month_name[month]+" "+year;
+              document.getElementById("calendar-dates").appendChild(calendar);
+            }
+            function get_calendar(day_no, days){
+              var todaysDate = new Date().getDate();
+              var table = document.createElement('table');
+              var tr = document.createElement('tr');
+            
+              //row for the day letters
+              for(var c=0; c<=6; c++){
+                  var th = document.createElement('th');
+                  th.innerHTML = "MTWTFSS"[c];
+                  tr.appendChild(th);
+              }
+              table.appendChild(tr);
+              //create 2nd row
+              tr = document.createElement('tr');
+              var c;
+              for(c=0; c<=6; c++){
+                  if(c == day_no){
+                      break;
+                  }
+                  var td = document.createElement('td');
+                  td.innerHTML = "";
+                  tr.appendChild(td);
+              }
+              var count = 1;
+              for(; c<=6; c++){
+                  var td = document.createElement('td');
+                  if (count == todaysDate) {
+                    td.className = 'today';
+                  }
+                  td.innerHTML = count;
+                  count++;
+                  tr.appendChild(td);
+              }
+              table.appendChild(tr);
+              //rest of the date rows
+              for(var r=3; r<=7; r++){
+                  tr = document.createElement('tr');
+                  for(var c=0; c<=6; c++){
+                      if(count > days){
+                          table.appendChild(tr);
+                          return table;
+                      }
+                      var td = document.createElement('td');
+                      if (count == todaysDate) {
+                        td.className = 'today';
+                      }
+                      td.innerHTML = count;
+                      count++;
+                      tr.appendChild(td);
+                  }
+                  table.appendChild(tr);
+              }
+            return table;
+            }
+
+      </script>
+
+      <style>
+          .widthth{
+          background: #F4F4F4;
+        }
+    </style>
+
+    </head>
+    <body class="widthth">
+      <img id="bgimg1" src="./images/Vector 2.png" alt="">
+        <img id="bgimg2" src="./images/Vector 3.png" alt="">
+        <img id="bgimg3" src="./images/Cone-White-Glossy.png" alt="">
+        <img id="bgimg4" src="./images/Cone-White-Glossy (1).png" alt="">
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-2">
+                <!-- For Mobile -->
+            <div class="row">
+                <!--Sidepanel button-->
+                <button class="openbtn mt-5 pt-0 pb-0" onclick="openNav()">☰</button>
+                <!--Sidepanel-->
+                <div id="mySidepanel" class="sidepanel">
+                  <div class="nav1">
+                  <a href="index.html">
+                  <img id="logos" src="./images/dash.svg" /> Dashboard
+                      </a>
+                      
+                      <a href="resultstudentpanel.html">
+                      <img id="logos" src="./images/result.svg" /> Results
+                      </a>
+                      </div>
+                      <div class="navbuttons">
+                        <a id="navbottombtn" href="aboutus.html">
+                          <img  src="./images/Vector (1).png" /> About Us
+                        </a>
+                                
+                                <a id="navbottombtn" href="jionuspage.html">
+                                <img  src="./images/Vector (2).png" /> Join Us
+                                </a>
+                      </div>
+                      <!--sidepanel close button-->
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                      <img id="closbtn" src="./images/Arrow3.png" />
+                      <img id="clsbtn" src="./images/Arrow1.png" />
+                      </a>
+                </div>
+                <!--For laptop and tabs-->
+                <!--Sidebar-->
+              <div class="sidebar pt-5">
+                  <div class="nav1">
+                  <a href="index.html">
+                  <img id="logos" src="./images/dash.svg" /> Dashboard
+                        </a>
+                        
+                        <a href="resultstudentpanel.html">
+                        <img id="logos" src="./images/result.svg" /> Results
+                        </a>
+                        </div>
+                        <div class="navbuttons">
+                          <a id="navbottombtn"  href="aboutus.html">
+                            <img  src="./images/Vector (1).png" /> About Us
+                          </a>
+                                  
+                                  <a id="navbottombtn" href="jionuspage.html">
+                                  <img  src="./images/Vector (2).png" /> Join Us
+                                  </a>
+                        </div>
+                      </div>
+            </div>
+          </div>
+          <div class="col-10 pl-3">
+              <div class="row">
+            <div id="subheading1" class="col-6 pl-lg-3 pl-0 pt-3" align="left">
+                <div id="heading">
+                  Muhammad Hamza
+                </div>
+        </div>
+        <div class="col-lg-2 col-5 pt-4 mt-4" align="right">
+            <span class="switch">
+                <input type="checkbox" checked id="switch" onchange="changeBodyColor()" /><label class="m-0" for="switch"></label>
+                </span>
+        </div>
+        <div class="col-lg-1 col-2 pt-4" align="right">
+            <div class="dropmenu1">
+                <button onclick="myFunction1()" class="menubtn">
+                    <img class="icon mt-3" src="./images/equilizer.svg" alt="">
+                </button>
+                <div id="myDropmenu1" class="dropdown1-list">
+                  <a>Help</a>
+                  <a>Customer Service</a>
+                  <a>Contact Us</a>
+                  <a>Become a Patreon</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-1 col-2 pt-4 pr-0" align="right">
+            <img class="icon mt-3" src="./images/bell.svg" alt="">
+        </div>
+        <div class="col-lg-2 col-3 pt-md-3 pt-4" align="right">
+            <div class="dropmenu">
+                <button onclick="myFunction()" class="menubtn rounded-circle">
+                <img id="img2" class="img-fluid rounded-circle p-0" src="./images/photo1.jpeg" />
+                </button>
+                <div id="myDropmenu" class="dropdown-list">
+                  <a href="studentprofile.html"><img id="img2" class="img-fluid rounded-circle" src="./images/photo1.jpeg" /> <br></br>Profile</a>
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+        </div>
+        </div>
+              </div>
+              <div class="col-xl-2 d-xl-block d-none"></div>
+              <div class="col-xl-10 ml-xl-5 pl-xl-5 pl-0 pr-0">
+                            <!--Heading shown on mobile and tab-->
+        <div id="subheading2" class="row">
+          <div class="col" align="left">
+            <div id="heading">
+              Muhammad Hamza
+            </div>
+          </div>
+        </div>
+        <!--Form-->
+        <div class="row ml-xl-5 pl-xl-5">
+            <div class="container-fluid pl-0 pr-0 ">
+                <div class="row pt-5 pb-5 pl-md-auto pl-3 pr-md-4 pr-3">
+                    <div class="col-md-7 mr-lg-4 mr-md-2 mr-0 p-4 rectstyle55">
+                        <div id="textstyle7" class="col-12">
+                            Student Overview
+                        </div>
+                        <div class="col-12 pt-3">
+                            <div id="textstyle10" class="row">
+                                <div class="col-4">Program</div>
+                                <div class="col-2">Semester</div>
+                                <div class="col-3">CGPA</div>
+                                <div class="col-3">SGPA</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div id="textstyle11" class="row">
+                                <div class="col-4">BSCS</div>
+                                <div class="col-2">5<span id="setposition3">TH</span></div>
+                                <div class="col-3">3.5</div>
+                                <div class="col-3">3.2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 p-xl-4 p-2 ml-xl-4 ml-2 mt-md-auto mt-3 rectstyle56">
+                        <div id="textstyle12" class="col-12">
+                            New Updates
+                        </div>
+                        <div id="textstyle13" class="col-12 pt-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, luctus pharetra aliquam sit ipsum laoreet et ultrices sed. Dictumst egestas praesent consectetur sed eget scelerisque augue velit quisque. Fames turpis orci id fringilla lacinia risus, fermentum. Sed orci et
+                        </div>
+                    </div>
+                </div>
+                <div class="row rectstyle51 changmode p-lg-5 p-3 pt-5 m-md-auto m-0">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="textstyle1" class="col-12">
+                                Last Result
+                            </div>
+                        </div>
+                            <div class="row pt-4">
+                                <div id="textstyle2" class="col-lg-6 col-7">BSCS-5<span id="setposition2">TH</span> &nbsp Semester</div>
+                                <div id="textstyle3" class="col-lg-6 col-5 pr-4" align="right">Total: <span id="setfonts">600/600</span></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 pr-0 pt-4">
+                                    <table id="tablestyle">
+                                        <tr>
+                                           <td></td><td class="textstyle5">Subject_1</td><td class="textstyle5">Subject_2</td><td class="textstyle5">Subject_3</td><td class="textstyle5">Subject_4</td><td class="textstyle5">Subject_5</td><td class="textstyle5">Subject_6</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="textstyle4">Credit hrs</td><td>4 Cr</td><td>4 Cr</td><td>4 Cr</td><td>4 Cr</td><td>4 Cr</td><td>4 Cr</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="textstyle4">Tot. Marks</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="textstyle4">Marks Obt.</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="textstyle4">Grades</td><td>A4</td><td>A4</td><td>A4</td><td>A4</td><td>A4</td><td>A4</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="textstyle4">GPA</td><td>4.0</td><td>4.0</td><td>4.0</td><td>4.0</td><td>4.0</td><td>4.0</td>
+                                          </tr>
+                                    </table>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+    
+                <div class="row pt-5 pl-md-auto pl-3 pr-md-4 pr-3">
+                    <div class="col-md-6 mr-xl-4 mr-md-4 mr-0 p-4 rectstyle52 changmode">
+                        <div class="textstyle1" class="col-12">
+                            Calender
+                        </div>
+                        <div class="col-12 pt-4">
+                            <div id="calendar-month-year"></div>
+                            <div id="calendar-dates"></div>
+                        </div>
+                        <div id="textstyle6" class="col-12 pt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                <path class="iconimg" d="M12.1094 0C5.42202 0 0 5.42397 0 12.1094C0 18.7987 5.42202 24.2188 12.1094 24.2188C18.7967 24.2188 24.2188 18.7987 24.2188 12.1094C24.2188 5.42397 18.7967 0 12.1094 0ZM12.1094 5.37109C13.242 5.37109 14.1602 6.28926 14.1602 7.42188C14.1602 8.55449 13.242 9.47266 12.1094 9.47266C10.9768 9.47266 10.0586 8.55449 10.0586 7.42188C10.0586 6.28926 10.9768 5.37109 12.1094 5.37109ZM14.8438 17.7734C14.8438 18.097 14.5814 18.3594 14.2578 18.3594H9.96094C9.63735 18.3594 9.375 18.097 9.375 17.7734V16.6016C9.375 16.278 9.63735 16.0156 9.96094 16.0156H10.5469V12.8906H9.96094C9.63735 12.8906 9.375 12.6283 9.375 12.3047V11.1328C9.375 10.8092 9.63735 10.5469 9.96094 10.5469H13.0859C13.4095 10.5469 13.6719 10.8092 13.6719 11.1328V16.0156H14.2578C14.5814 16.0156 14.8438 16.278 14.8438 16.6016V17.7734Z" fill="#4E60F6"/>
+                                </svg> First Semester Exam at 12/04/2021
+                        </div>
+                    </div>
+                    <div class="col-md-5 ml-xl-3 ml-lg-3 ml-md-2 ml-0 mt-md-auto mt-3 p-4 rectstyle53">
+                        <div id="textstyle7" class="col-12">
+                            News Box
+                        </div>
+                        <div class="col-12 scrollset rectstyle54">
+                            <div class="col-12 textstyle8 pt-5">
+                                This This Company is looking for Internee.
+                            </div>
+                            <div class="col-12 textstyle9 pt-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit, tempus viverra mattis a mauris imperdiet ut. Erat arcu aenean vitae neque. Nunc nunc, eget erat consequat dui, viverra risus. Mauris tristique in est nisl, quis libero at ipsum. Aenean lobortis cursus a venenatis ultrices luctus sem maecenas nec.
+                            </div>
+                            <div class="col-12 textstyle8 pt-5">
+                                This This Company is looking for Internee.
+                            </div>
+                            <div class="col-12 textstyle9 pt-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit, tempus viverra mattis a mauris imperdiet ut. Erat arcu aenean vitae neque. Nunc nunc, eget erat consequat dui, viverra risus. Mauris tristique in est nisl, quis libero at ipsum. Aenean lobortis cursus a venenatis ultrices luctus sem maecenas nec.
+                            </div>
+                            <div class="col-12 textstyle8 pt-5">
+                                This This Company is looking for Internee.
+                            </div>
+                            <div class="col-12 textstyle9 pt-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit, tempus viverra mattis a mauris imperdiet ut. Erat arcu aenean vitae neque. Nunc nunc, eget erat consequat dui, viverra risus. Mauris tristique in est nisl, quis libero at ipsum. Aenean lobortis cursus a venenatis ultrices luctus sem maecenas nec.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+              </div>
+          </div>
+              </div>
+    </body>
+</html>
