@@ -134,10 +134,6 @@
 }
 
 @media screen and (max-width: 400px) {
-    .imgsize{
-    width: 100px;
-    height: 100px;
-}
     .textstyle3{
     font-size: 15.8043px;
 }
@@ -147,5 +143,9 @@
 }
     .btnuploadcard{
     font-size: 12.2338px;
+}
+    #imgstyle3{
+    width: 20px;
+    height:15px;
 }
 }
