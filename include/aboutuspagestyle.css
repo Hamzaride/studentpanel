@@ -60,5 +60,14 @@
 @media screen and (max-width: 550px){
     #textstyle2{
         padding-left: 70px;
-    }
+    }   
+}
+@media screen and (max-width: 400px){
+    #imgstyle41{
+    width: 200.46px;
+    height: 100.21px;
+}
+    #textstyle2{
+        padding-left: 0px;
+    }   
 }
