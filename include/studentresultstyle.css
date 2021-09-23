@@ -317,21 +317,21 @@
     }
 
     .textstyle2{
-        font-size: 15px;
+        font-size: 13px;
     }
 
     #setfonts{
-        font-size: 15px;
+        font-size: 13px;
     }
 
     #tablestyle td{
         font-size: 8px;
     }
     .semesterrect{
-    height: 50px;
+    height: 46px;
     font-size: 13.4752px;
 }
     .setfontsize{
-    font-size: 4px;
+    font-size: 6px;
 }
 }
