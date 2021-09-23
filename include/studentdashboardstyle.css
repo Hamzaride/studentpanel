@@ -462,3 +462,28 @@
         padding-right: 20px;
     }
 }
+@media screen and (max-width: 400px){
+    #textstyle11{
+        font-size: 30px;
+    }
+    
+    #setposition3{
+    top:15px;
+    font-size: 10px;
+}
+     #textstyle2{
+        font-size: 15px;
+    }
+    #setfonts{
+        font-size: 15px;
+    }
+    #calendar-dates th{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #calendar-dates td{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
