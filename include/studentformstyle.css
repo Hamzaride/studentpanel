@@ -1,0 +1,160 @@
+#heading{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    padding-top: 30px;
+    color: #3C4BCE;
+}
+
+#subheading2{
+    display: none;
+}
+
+.rect1{
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.2);
+  border-radius: 27px;
+}
+
+.rect2{
+  width: 169px;
+  height: 84px;
+  border: 1.87px solid #4051DB;
+  box-sizing: border-box;
+  border-radius: 4.3299px;
+  background: rgb(243, 240, 240, 0);
+}
+
+.rect2:focus{
+  outline: none;
+}
+
+.rect3{
+  width: 108px;
+  height: 84px;
+  border: 1.87px solid #FF5959;
+  box-sizing: border-box;
+  border-radius: 4.3299px;
+  background: rgb(243, 240, 240, 0);
+}
+
+.rect3:focus{
+  outline: none;
+}
+
+
+#profile1{
+  width: 84px;
+  height: 84px;
+  background: url(image.png);
+  filter: drop-shadow(0px 11.5341px 20.7614px rgba(0, 0, 0, 0.2));
+}
+
+#uploadimg{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.2338px;
+  color: #4051DB;
+}
+
+#removeimg{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.2338px;
+  color: #FF5959;
+}
+
+.name1{
+  border:none;
+  border-bottom: 2px solid #C0C0C0;
+  width: 100%;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  background: rgb(243, 240, 240, 0);
+}
+
+.name1:focus{
+  box-shadow: none !important;
+  outline: none;
+}
+
+#name{
+  font-family: Raleway;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+color: #4E60F6;
+}
+
+#savebtn{
+  width: 150px;
+  height: 60px;
+  background: #4E60F6;
+  border-radius: 4.3299px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33.2338px;
+  color: #FFFFFF;
+}
+
+#cancelbtn{
+  width: 180px;
+  height: 60px;
+  background: #FF5959;
+  border-radius: 4.3299px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33.2338px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 990px) {
+    #subheading1{
+        display: none;
+    }
+
+    #subheading2{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+  #savebtn{
+width: 100px;
+height: 50px;
+font-size: 28.2338px;
+}
+
+#cancelbtn{
+width: 100px;
+height: 50px;
+font-size: 28.2338px;
+}
+  .rect2{
+width: 100px;
+height: 84px;
+}
+
+.rect3{
+  margin-left:-20px;
+width: 84px;
+height: 84px;
+}
+  #uploadimg{
+font-size: 12.2338px;
+}
+
+#removeimg{
+font-size: 12.2338px;
+}
+}
+
